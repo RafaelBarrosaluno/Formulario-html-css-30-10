@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="CSS/style2.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="POST" class="form-cadastro">
+            <h2>Cadastro para o Usuário</h2>
+            
+            <section>
+                <h3>Informações Pessoais</h3>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label>Gênero:</label>
+                <div class="genero">
+                    <label><input type="radio" name="genero" value="masculino" required> masculino</label>
+                    <label><input type="radio" name="genero" value="feminino"> feminino</label>
+                    <label><input type="radio" name="genero" value="outro"> outro...</label>
+                </div>
+
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento" required>
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione seu estado</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="??">Outro..</option>
+                    
+                </select>
+
+                <label for="cidade">Cidade:</label>
+                <select id="cidade" name="cidade" required>
+                    <option value="">Selecione sua cidade</option>
+                    <option value="gua">Guarulhos</option>
+                    <option value="aru">Arujá</option>
+                    <option value="bar">Barueri</option>
+                </select>
+
+                <label for="descricao">Descrição Pessoal:</label>
+                <textarea id="descricao" name="descricao" placeholder="Descreva você"></textarea>
+            </section>
+
+            <section>
+                <h3>Credenciais</h3>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+                <label for="confirmaSenha">Confirmação de Senha:</label>
+                <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Confirme sua senha" required>
+            </section>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </div>
+    
+</body>
+</html>
